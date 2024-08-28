@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <!-- fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" id="brand" class="flex items-center gap-2">
+        <img
+          class="object-cover max-w-12 max-h-12"
+          src="./assets/asset 0.png"
+          alt="logo"
+        />
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+      </a>
+
+      <div id="nav-menu" class="gap-12 hidden md:flex">
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">Changelog</a>
+        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+        <a href="#" class="font-medium hover:text-primary">Login</a>
+      </div>
+      <button
+        class="hidden md:flex items-center gap-2 border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600"
+      >
+        <img src="./assets/asset 1.svg" alt="" />
+        Electron Developers
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="p-2 md:hidden" onClick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+    </nav>
+  </body>
+  <script src="script.js"></script>
+</html>
