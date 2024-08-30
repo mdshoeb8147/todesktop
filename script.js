@@ -1,3 +1,4 @@
+const navDialog = document.getElementById("nav-dailog");
 function handleMenu() {
-  console.log("hii");
+  navDialog.classList.toggle("hidden");
 }
